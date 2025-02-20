@@ -29,9 +29,11 @@ Run the application:
 
 1. ### Get all tweets
 
-    Route: GET /tweets/
-    Description: Retrieves all available tweets in the archive.
-    Response Example:
+    `Route:` GET /tweets/
+
+    `Description:` Retrieves all available tweets in the archive.
+
+    `Response Example:`
 
     [
       {
@@ -48,11 +50,13 @@ Run the application:
 
 2. ### Get tweet by ID
 
-    Route: GET /tweets/:id
-    Description: Retrieves detailed information about a specific tweet by its ID.
+    `Route:` GET /tweets/:id
+
+    `Description:` Retrieves detailed information about a specific tweet by its ID.
     URL Parameter:
         id: The ID of the tweet you want to retrieve.
-    Response Example:
+
+    `Response Example:`
 
     {
       "id": 1,
@@ -65,9 +69,11 @@ Run the application:
 
 3. ### Get all links in tweets
 
-    Route: GET /tweets/links/ OR /tweets/links/:id
-    Description: Extracts all external links from all tweets or a specific tweet and groups them based on tweet IDs.
-    Response Example:
+    `Route:` GET /tweets/links/ OR /tweets/links/:id
+
+    `Description:` Extracts all external links from all tweets or a specific tweet and groups them based on tweet IDs.
+
+    `Response Example:`
 
     {
       "1": [
@@ -81,11 +87,14 @@ Run the application:
 
 4. ### Get user profile
 
-    Route: GET /tweets/user/:screenName
-    Description: Retrieves the profile information for a given Twitter user.
+    `Route:` GET /tweets/user/:screenName
+
+   ` Description:` Retrieves the profile information for a given Twitter user.
+
     URL Parameter:
         screenName: The screen_name of the Twitter user whose profile you want to retrieve.
-    Response Example:
+
+    `Response Example:`
 
     {
       "screen_name": "user1",
